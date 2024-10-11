@@ -5,6 +5,7 @@ const prisma = new PrismaClient();
 module.exports = {
     async execute() {
       try {
+        // pega os dados onde o packetloss nao é nulo e ordena do maior para o menor, e pega os 3 primerios, exibindo 3 maiores valor de packetloss
         let clientes = await prisma.metrics.findMany({
           orderBy: {
             packetLoss: 'desc',

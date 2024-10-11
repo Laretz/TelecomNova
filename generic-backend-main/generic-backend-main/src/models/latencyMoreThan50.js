@@ -11,15 +11,19 @@ module.exports = {
                 gt: 50  
           }
         },
-        include: {
-          customer: true 
+        select: {
+          latency: true,
+          customer: {
+            select: {
+              name: true
+            }
+          }
         }
       });
       return clientes;
     } catch (error) {
       // Tratamento de erros
       error.path = "src/models/latencyMoreThan50.js";
-      console.log(error)
       throw error;
     } finally {
       await prisma.$disconnect();

@@ -10,11 +10,10 @@ module.exports = {
       res.status(200).json(clients);
     } catch (error) {
       if (!error.path) {
-        // Informa o caminho do erro se não tiver
+      // informa o caminho do erro se não tiver
         error.path = "src/controllers/client/latencyMoreThan50Controller.js";
       }
-      logger.error(error); // Log do erro, se desejado
-      res.status(500).json({ message: "Internal Server Error", path: error.path });
+      throw error;
     }
   },
 };

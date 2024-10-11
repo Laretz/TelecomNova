@@ -602,3 +602,15 @@ C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\mode
 
 Unknown argument `tale`. Did you mean `take`? Available options are marked with ?.
 11/10/2024 04:17:43.615 [[32minfo[39m]: successfully found clients
+11/10/2024 09:18:27.360 [[32minfo[39m]: successfully found client with the most improvement in latency
+11/10/2024 09:32:06.072 [[32minfo[39m]: successfully found client with the most improvement in latency
+11/10/2024 09:32:13.186 [[32minfo[39m]: successfully found clients
+11/10/2024 09:33:39.529 [[32minfo[39m]: successfully found client with the most improvement in latency
+11/10/2024 10:06:51.619 [[32minfo[39m]: successfully found client with the most improvement in latency
+11/10/2024 17:00:26.122 [[32minfo[39m]: successfully found client with the most improvement in latency
+11/10/2024 17:10:55.000 [[32minfo[39m]: successfully found client with the most improvement in latency
+11/10/2024 17:14:02.702 [[32minfo[39m]: successfully found client with the most improvement in latency
+11/10/2024 17:15:46.074 [[31merror[39m]: path: src/models/latencyImproviment.js message: customerId is not defined
+11/10/2024 18:43:26.588 [[32minfo[39m]: successfully found clients
+11/10/2024 18:45:08.261 [[32minfo[39m]: successfully found clients
+11/10/2024 18:48:25.355 [[32minfo[39m]: successfully found clients
