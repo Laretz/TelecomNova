@@ -1,0 +1,478 @@
+09/05/2024 19:03:14.314 [[32minfo[39m]: host name read successfully
+09/05/2024 19:03:15.154 [[32minfo[39m]: host name read successfully
+09/05/2024 19:03:15.383 [[32minfo[39m]: host name read successfully
+09/05/2024 19:03:15.573 [[32minfo[39m]: host name read successfully
+09/05/2024 19:03:15.743 [[32minfo[39m]: host name read successfully
+09/05/2024 19:03:15.935 [[32minfo[39m]: host name read successfully
+09/05/2024 19:03:16.124 [[32minfo[39m]: host name read successfully
+09/05/2024 19:03:16.361 [[32minfo[39m]: host name read successfully
+09/05/2024 19:04:00.815 [[32minfo[39m]: host name read successfully
+09/05/2024 19:04:01.528 [[32minfo[39m]: host name read successfully
+09/05/2024 19:05:47.922 [[32minfo[39m]: host name read successfully
+09/05/2024 19:05:48.965 [[32minfo[39m]: host name read successfully
+09/05/2024 19:05:49.805 [[32minfo[39m]: host name read successfully
+09/05/2024 19:05:50.663 [[32minfo[39m]: host name read successfully
+09/05/2024 19:06:29.401 [[32minfo[39m]: host name read successfully
+09/05/2024 19:06:30.419 [[32minfo[39m]: host name read successfully
+09/05/2024 19:06:31.727 [[32minfo[39m]: host name read successfully
+09/05/2024 19:06:34.976 [[32minfo[39m]: host name read successfully
+09/05/2024 19:06:36.285 [[32minfo[39m]: host name read successfully
+09/05/2024 19:06:52.991 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:52.993 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:53.531 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:53.531 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:53.818 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:53.818 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:54.064 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:54.064 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:54.291 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:54.291 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:54.545 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:54.546 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:55.748 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:55.749 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:56.083 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:56.083 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:56.318 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:56.319 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:56.553 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:56.554 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:56.761 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:56.761 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:56.970 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:56.971 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:57.151 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:57.153 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:57.335 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:57.335 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:06:58.700 [[32minfo[39m]: successfully found clients
+09/05/2024 19:06:58.701 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:07:53.418 [[32minfo[39m]: successfully found clients
+09/05/2024 19:07:53.421 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:11:07.832 [[32minfo[39m]: successfully found clients
+09/05/2024 19:11:07.834 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:11:08.619 [[32minfo[39m]: successfully found clients
+09/05/2024 19:11:08.619 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:11:09.322 [[32minfo[39m]: successfully found clients
+09/05/2024 19:11:09.323 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:11:09.871 [[32minfo[39m]: successfully found clients
+09/05/2024 19:11:09.871 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:11:10.699 [[32minfo[39m]: successfully found clients
+09/05/2024 19:11:10.700 [[31merror[39m]: path: src/controllers/client/findByIdClientesController.js message: Do not know how to serialize a BigInt
+09/05/2024 19:11:13.689 [[32minfo[39m]: successfully found clients
+09/05/2024 19:11:14.675 [[32minfo[39m]: successfully found clients
+09/05/2024 19:11:15.899 [[32minfo[39m]: successfully found clients
+09/05/2024 19:11:16.522 [[32minfo[39m]: successfully found clients
+09/05/2024 19:11:16.876 [[32minfo[39m]: successfully found clients
+09/05/2024 19:11:17.167 [[32minfo[39m]: successfully found clients
+09/05/2024 19:11:17.413 [[32minfo[39m]: successfully found clients
+09/05/2024 19:12:22.985 [[32minfo[39m]: successfully found clients
+08/10/2024 14:30:49.181 [[32minfo[39m]: successfully found clients
+10/10/2024 21:29:54.416 [[32minfo[39m]: successfully found clients
+10/10/2024 22:01:11.968 [[32minfo[39m]: successfully found clients
+10/10/2024 22:33:20.044 [[32minfo[39m]: successfully found clients
+10/10/2024 23:16:43.239 [[32minfo[39m]: successfully found clients
+10/10/2024 23:17:58.545 [[32minfo[39m]: successfully found clients
+10/10/2024 23:18:25.968 [[32minfo[39m]: successfully found clients
+10/10/2024 23:18:29.356 [[32minfo[39m]: successfully found clients
+10/10/2024 23:18:30.982 [[32minfo[39m]: successfully found clients
+10/10/2024 23:23:01.241 [[32minfo[39m]: successfully found clients
+10/10/2024 23:27:04.346 [[32minfo[39m]: successfully found clients
+10/10/2024 23:31:19.988 [[32minfo[39m]: successfully found clients
+10/10/2024 23:31:23.331 [[31merror[39m]: 
+Invalid `prisma.customers.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:45
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.customers.findMany({
+          where: {
+            metrics: {
+            ~~~~~~~
+              some: {
+                latency: {
+                  gt: 50
+                }
+              }
+            },
+        ?   AND?: CustomersWhereInput | CustomersWhereInput[],
+        ?   OR?: CustomersWhereInput[],
+        ?   NOT?: CustomersWhereInput | CustomersWhereInput[],
+        ?   id?: StringFilter | String,
+        ?   name?: StringFilter | String,
+        ?   perfil?: IntFilter | Int,
+        ?   Metrics?: MetricsListRelationFilter
+          },
+          include: {
+            Metrics: true
+          }
+        })
+
+Unknown argument `metrics`. Did you mean `Metrics`? Available options are marked with ?.
+10/10/2024 23:33:39.199 [[31merror[39m]: 
+Invalid `prisma.customers.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:45
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.customers.findMany({
+          where: {
+            metrics: {
+            ~~~~~~~
+              some: {
+                latency: {
+                  gt: 50
+                }
+              }
+            },
+        ?   AND?: CustomersWhereInput | CustomersWhereInput[],
+        ?   OR?: CustomersWhereInput[],
+        ?   NOT?: CustomersWhereInput | CustomersWhereInput[],
+        ?   id?: StringFilter | String,
+        ?   name?: StringFilter | String,
+        ?   perfil?: IntFilter | Int,
+        ?   Metrics?: MetricsListRelationFilter
+          },
+          include: {
+            Metrics: true
+          }
+        })
+
+Unknown argument `metrics`. Did you mean `Metrics`? Available options are marked with ?.
+10/10/2024 23:34:03.139 [[31merror[39m]: 
+Invalid `prisma.customers.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:45
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.customers.findMany({
+          where: {
+            metrics: {
+            ~~~~~~~
+              some: {
+                latency: {
+                  gt: 50
+                }
+              }
+            },
+        ?   AND?: CustomersWhereInput | CustomersWhereInput[],
+        ?   OR?: CustomersWhereInput[],
+        ?   NOT?: CustomersWhereInput | CustomersWhereInput[],
+        ?   id?: StringFilter | String,
+        ?   name?: StringFilter | String,
+        ?   perfil?: IntFilter | Int,
+        ?   Metrics?: MetricsListRelationFilter
+          },
+          include: {
+            Metrics: true
+          }
+        })
+
+Unknown argument `metrics`. Did you mean `Metrics`? Available options are marked with ?.
+10/10/2024 23:34:04.276 [[31merror[39m]: 
+Invalid `prisma.customers.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:45
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.customers.findMany({
+          where: {
+            metrics: {
+            ~~~~~~~
+              some: {
+                latency: {
+                  gt: 50
+                }
+              }
+            },
+        ?   AND?: CustomersWhereInput | CustomersWhereInput[],
+        ?   OR?: CustomersWhereInput[],
+        ?   NOT?: CustomersWhereInput | CustomersWhereInput[],
+        ?   id?: StringFilter | String,
+        ?   name?: StringFilter | String,
+        ?   perfil?: IntFilter | Int,
+        ?   Metrics?: MetricsListRelationFilter
+          },
+          include: {
+            Metrics: true
+          }
+        })
+
+Unknown argument `metrics`. Did you mean `Metrics`? Available options are marked with ?.
+10/10/2024 23:34:47.029 [[31merror[39m]: 
+Invalid `prisma.customers.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:45
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.customers.findMany({
+          where: {
+            metrics: {
+            ~~~~~~~
+              some: {
+                latency: {
+                  gt: 50
+                }
+              }
+            },
+        ?   AND?: CustomersWhereInput | CustomersWhereInput[],
+        ?   OR?: CustomersWhereInput[],
+        ?   NOT?: CustomersWhereInput | CustomersWhereInput[],
+        ?   id?: StringFilter | String,
+        ?   name?: StringFilter | String,
+        ?   perfil?: IntFilter | Int,
+        ?   Metrics?: MetricsListRelationFilter
+          },
+          include: {
+            Metrics: true
+          }
+        })
+
+Unknown argument `metrics`. Did you mean `Metrics`? Available options are marked with ?.
+10/10/2024 23:36:59.056 [[31merror[39m]: 
+Invalid `prisma.customers.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:45
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.customers.findMany({
+          where: {
+            metrics: {
+            ~~~~~~~
+              some: {
+                latency: {
+                  gt: 50
+                }
+              }
+            },
+        ?   AND?: CustomersWhereInput | CustomersWhereInput[],
+        ?   OR?: CustomersWhereInput[],
+        ?   NOT?: CustomersWhereInput | CustomersWhereInput[],
+        ?   id?: StringFilter | String,
+        ?   name?: StringFilter | String,
+        ?   perfil?: IntFilter | Int,
+        ?   Metrics?: MetricsListRelationFilter
+          },
+          include: {
+            Metrics: true
+          }
+        })
+
+Unknown argument `metrics`. Did you mean `Metrics`? Available options are marked with ?.
+10/10/2024 23:37:02.995 [[32minfo[39m]: successfully found clients
+10/10/2024 23:37:09.041 [[32minfo[39m]: successfully found clients
+10/10/2024 23:37:14.416 [[31merror[39m]: 
+Invalid `prisma.customers.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:45
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.customers.findMany({
+          where: {
+            metrics: {
+            ~~~~~~~
+              some: {
+                latency: {
+                  gt: 50
+                }
+              }
+            },
+        ?   AND?: CustomersWhereInput | CustomersWhereInput[],
+        ?   OR?: CustomersWhereInput[],
+        ?   NOT?: CustomersWhereInput | CustomersWhereInput[],
+        ?   id?: StringFilter | String,
+        ?   name?: StringFilter | String,
+        ?   perfil?: IntFilter | Int,
+        ?   Metrics?: MetricsListRelationFilter
+          },
+          include: {
+            Metrics: true
+          }
+        })
+
+Unknown argument `metrics`. Did you mean `Metrics`? Available options are marked with ?.
+10/10/2024 23:37:54.157 [[32minfo[39m]: successfully found clients
+10/10/2024 23:37:59.188 [[32minfo[39m]: successfully found clients
+10/10/2024 23:38:03.263 [[32minfo[39m]: successfully found clients
+10/10/2024 23:39:06.114 [[32minfo[39m]: successfully found clients
+10/10/2024 23:39:09.950 [[32minfo[39m]: successfully found clients
+10/10/2024 23:39:31.644 [[32minfo[39m]: successfully found clients
+10/10/2024 23:50:17.189 [[32minfo[39m]: successfully found clients
+10/10/2024 23:50:30.281 [[32minfo[39m]: successfully found clients
+10/10/2024 23:50:34.920 [[31merror[39m]: 
+Invalid `prisma.customers.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:45
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.customers.findMany({
+          where: {
+            metrics: {
+            ~~~~~~~
+              some: {
+                latency: {
+                  gt: 50
+                }
+              }
+            },
+        ?   AND?: CustomersWhereInput | CustomersWhereInput[],
+        ?   OR?: CustomersWhereInput[],
+        ?   NOT?: CustomersWhereInput | CustomersWhereInput[],
+        ?   id?: StringFilter | String,
+        ?   name?: StringFilter | String,
+        ?   perfil?: IntFilter | Int,
+        ?   Metrics?: MetricsListRelationFilter
+          },
+          include: {
+            metrics: true
+          }
+        })
+
+Unknown argument `metrics`. Did you mean `Metrics`? Available options are marked with ?.
+10/10/2024 23:51:36.033 [[32minfo[39m]: successfully found clients
+10/10/2024 23:53:33.199 [[32minfo[39m]: successfully found clients
+10/10/2024 23:56:50.690 [[31merror[39m]: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:43
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.metrics.findMany({
+          where: {
+            latency: {
+              gt: 50
+            },
+            include: {
+            ~~~~~~~
+              Customers: true
+            },
+        ?   AND?: MetricsWhereInput | MetricsWhereInput[],
+        ?   OR?: MetricsWhereInput[],
+        ?   NOT?: MetricsWhereInput | MetricsWhereInput[],
+        ?   id?: StringFilter | String,
+        ?   date?: DateTimeFilter | DateTime,
+        ?   packetLoss?: IntNullableFilter | Int | Null,
+        ?   ping?: BoolNullableFilter | Boolean | Null,
+        ?   traffic?: FloatNullableFilter | Float | Null,
+        ?   customerId?: StringFilter | String,
+        ?   customer?: CustomersRelationFilter | CustomersWhereInput
+          }
+        })
+
+Unknown argument `include`. Available options are marked with ?.
+10/10/2024 23:57:54.190 [[31merror[39m]: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:43
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.metrics.findMany({
+          where: {
+            latency: {
+              gt: 50
+            }
+          },
+          include: {
+            Customers: true,
+            ~~~~~~~~~
+        ?   customer?: true
+          }
+        })
+
+Unknown field `Customers` for include statement on model `Metrics`. Available options are marked with ?.
+10/10/2024 23:58:12.633 [[31merror[39m]: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:43
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.metrics.findMany({
+          where: {
+            latency: {
+              gt: 50
+            }
+          },
+          include: {
+            customers: true,
+            ~~~~~~~~~
+        ?   customer?: true
+          }
+        })
+
+Unknown field `customers` for include statement on model `Metrics`. Available options are marked with ?.
+10/10/2024 23:58:59.455 [[31merror[39m]: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:43
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.metrics.findMany({
+          where: {
+            latency: {
+              gt: 50
+            }
+          },
+          include: {
+            customers: true,
+            ~~~~~~~~~
+        ?   customer?: true
+          }
+        })
+
+Unknown field `customers` for include statement on model `Metrics`. Available options are marked with ?.
+10/10/2024 23:59:24.906 [[31merror[39m]: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:43
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.metrics.findMany({
+          where: {
+            latency: {
+              gt: 50
+            }
+          },
+          include: {
+            customers: true,
+            ~~~~~~~~~
+        ?   customer?: true
+          }
+        })
+
+Unknown field `customers` for include statement on model `Metrics`. Available options are marked with ?.
+11/10/2024 00:01:36.151 [[31merror[39m]: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50.js:9:43
+
+  6 async execute() {
+  7   try {
+  8     // Buscar clientes que têm métricas com latência maior que 50ms
+→ 9     let clientes = await prisma.metrics.findMany({
+          where: {
+            latency: {
+              gt: 50
+            }
+          },
+          include: {
+            customerid: true,
+            ~~~~~~~~~~
+        ?   customer?: true
+          }
+        })
+
+Unknown field `customerid` for include statement on model `Metrics`. Available options are marked with ?.
+11/10/2024 00:02:51.878 [[32minfo[39m]: successfully found clients
+11/10/2024 00:12:07.434 [[32minfo[39m]: successfully found clients
