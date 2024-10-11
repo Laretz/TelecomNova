@@ -476,3 +476,129 @@ C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\mode
 Unknown field `customerid` for include statement on model `Metrics`. Available options are marked with ?.
 11/10/2024 00:02:51.878 [[32minfo[39m]: successfully found clients
 11/10/2024 00:12:07.434 [[32minfo[39m]: successfully found clients
+11/10/2024 03:43:15.950 [[32minfo[39m]: successfully found clients
+11/10/2024 03:43:18.412 [[32minfo[39m]: successfully found clients
+11/10/2024 03:53:16.675 [[32minfo[39m]: successfully found clients
+11/10/2024 03:53:19.236 [[32minfo[39m]: successfully found clients
+11/10/2024 03:53:23.024 [[31merror[39m]: path: src/controllers/client/packetLossRate.js message: packetLossRate is not defined
+11/10/2024 03:53:28.619 [[31merror[39m]: path: src/controllers/client/packetLossRate.js message: packetLossRate is not defined
+11/10/2024 03:59:14.724 [[31merror[39m]: path: src/controllers/client/packetLossRate.js message: packetLossRate is not defined
+11/10/2024 03:59:21.871 [[32minfo[39m]: successfully found clients
+11/10/2024 04:00:05.094 [[32minfo[39m]: successfully found clients
+11/10/2024 04:00:13.238 [[32minfo[39m]: successfully found clients
+11/10/2024 04:09:36.267 [[32minfo[39m]: successfully found clients
+11/10/2024 04:09:58.296 [[32minfo[39m]: successfully found clients
+11/10/2024 04:16:22.053 [[32minfo[39m]: successfully found clients
+11/10/2024 04:16:28.691 [[31merror[39m]: path: src/models/packetLossRate.js message: 
+Invalid `prisma.metrics.findFirst()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\packetLossRate.js:8:45
+
+  5 module.exports = {
+  6     async execute() {
+  7       try {
+→ 8         let clientes = await prisma.metrics.findFirst({
+              orderBy: {
+                packetLoss: "desc"
+              },
+              where: {
+                packetLoss: {
+                  not: null
+                }
+              },
+              include: {
+                customer: true
+              },
+              tale: 3,
+              ~~~~
+            ? cursor?: MetricsWhereUniqueInput,
+            ? take?: Int,
+            ? skip?: Int,
+            ? distinct?: MetricsScalarFieldEnum | MetricsScalarFieldEnum[]
+            })
+
+Unknown argument `tale`. Did you mean `take`? Available options are marked with ?.
+11/10/2024 04:17:11.583 [[31merror[39m]: path: src/models/packetLossRate.js message: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\packetLossRate.js:8:45
+
+  5 module.exports = {
+  6     async execute() {
+  7       try {
+→ 8         let clientes = await prisma.metrics.findMany({
+              orderBy: {
+                packetLoss: "desc"
+              },
+              where: {
+                packetLoss: {
+                  not: null
+                }
+              },
+              include: {
+                customer: true
+              },
+              tale: 3,
+              ~~~~
+            ? cursor?: MetricsWhereUniqueInput,
+            ? take?: Int,
+            ? skip?: Int,
+            ? distinct?: MetricsScalarFieldEnum | MetricsScalarFieldEnum[]
+            })
+
+Unknown argument `tale`. Did you mean `take`? Available options are marked with ?.
+11/10/2024 04:17:13.076 [[31merror[39m]: path: src/models/packetLossRate.js message: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\packetLossRate.js:8:45
+
+  5 module.exports = {
+  6     async execute() {
+  7       try {
+→ 8         let clientes = await prisma.metrics.findMany({
+              orderBy: {
+                packetLoss: "desc"
+              },
+              where: {
+                packetLoss: {
+                  not: null
+                }
+              },
+              include: {
+                customer: true
+              },
+              tale: 3,
+              ~~~~
+            ? cursor?: MetricsWhereUniqueInput,
+            ? take?: Int,
+            ? skip?: Int,
+            ? distinct?: MetricsScalarFieldEnum | MetricsScalarFieldEnum[]
+            })
+
+Unknown argument `tale`. Did you mean `take`? Available options are marked with ?.
+11/10/2024 04:17:29.893 [[31merror[39m]: path: src/models/packetLossRate.js message: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\packetLossRate.js:8:45
+
+  5 module.exports = {
+  6     async execute() {
+  7       try {
+→ 8         let clientes = await prisma.metrics.findMany({
+              orderBy: {
+                packetLoss: "desc"
+              },
+              where: {
+                packetLoss: {
+                  not: null
+                }
+              },
+              include: {
+                customer: true
+              },
+              tale: 3,
+              ~~~~
+            ? cursor?: MetricsWhereUniqueInput,
+            ? take?: Int,
+            ? skip?: Int,
+            ? distinct?: MetricsScalarFieldEnum | MetricsScalarFieldEnum[]
+            })
+
+Unknown argument `tale`. Did you mean `take`? Available options are marked with ?.
+11/10/2024 04:17:43.615 [[32minfo[39m]: successfully found clients
