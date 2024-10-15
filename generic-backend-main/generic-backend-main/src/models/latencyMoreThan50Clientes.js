@@ -5,6 +5,7 @@ const prisma = new PrismaClient();
 module.exports = {
   async execute() {
     try {
+      // pega todos os clientes que a latencia seja maior que 50 e traz apenas a latencia e o nome do customer, evitando carregar informações denecessarias
       let clientes = await prisma.metrics.findMany({
         where: {
           latency: {
@@ -13,17 +14,21 @@ module.exports = {
         },
         select: {
           latency: true,
+          date: true,
           customer: {
             select: {
               name: true
             }
           }
+        },
+        orderBy: {
+          latency: 'desc'
         }
       });
       return clientes;
     } catch (error) {
       // Tratamento de erros
-      error.path = "src/models/latencyMoreThan50.js";
+      error.path = "src/models/latencyMoreThan50Clientes.js";
       throw error;
     } finally {
       await prisma.$disconnect();
