@@ -614,3 +614,858 @@ Unknown argument `tale`. Did you mean `take`? Available options are marked with 
 11/10/2024 18:43:26.588 [[32minfo[39m]: successfully found clients
 11/10/2024 18:45:08.261 [[32minfo[39m]: successfully found clients
 11/10/2024 18:48:25.355 [[32minfo[39m]: successfully found clients
+11/10/2024 19:23:45.959 [[32minfo[39m]: successfully found clients
+11/10/2024 19:40:40.491 [[32minfo[39m]: successfully found clients
+11/10/2024 19:52:45.151 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:14:43
+
+  11 const minutesInSevenDays = 7 * 24 * 60; // 7 dias convertidos para minutos
+  12 
+  13 // Agrupar métricas por cliente
+→ 14 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-10-04T22:52:45.042Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 19:53:43.227 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation:
+
+{
+  select: {
+    _count: {
+      select: {
+        id: true
+      }
+    },
+    _sum: {
+      select: {
+        ping: true
+      }
+    },
+    clienteId: true
+  },
+  by: [
+    "clienteId"
+  ],
+  ~~~~~~~~~~~~~
+  where: {
+    date: {
+      gte: new Date("2024-10-04T22:53:43.143Z")
+    }
+  }
+}
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 19:53:49.574 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const monthDaysAgo = new Date();
+   9 monthDaysAgo.setDate(monthDaysAgo.getDate() - 30);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-09-11T22:53:49.382Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 19:54:06.483 [[31merror[39m]: path: src/models/disponibilidade.js message: sevenDaysAgo is not defined
+11/10/2024 19:54:26.778 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const monthDaysAgo = new Date();
+   9 monthDaysAgo.setDate(monthDaysAgo.getDate() - 30);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-09-11T22:54:26.668Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 19:54:29.543 [[32minfo[39m]: successfully found clients
+11/10/2024 19:54:32.393 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const monthDaysAgo = new Date();
+   9 monthDaysAgo.setDate(monthDaysAgo.getDate() - 30);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-09-11T22:54:32.301Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 19:54:56.347 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-10-04T22:54:56.125Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 19:54:57.662 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-10-04T22:54:57.567Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 19:56:19.802 [[32minfo[39m]: successfully found clients
+11/10/2024 19:56:22.094 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-10-04T22:56:22.008Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 19:57:25.559 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-10-04T22:57:25.441Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 19:57:45.778 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-10-04T22:57:45.671Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 19:58:51.770 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-10-04T22:58:51.556Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 19:59:24.416 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true,
+             ~~~~
+     ?       latency?: true,
+     ?       packetLoss?: true,
+     ?       traffic?: true
+           }
+         },
+         customerId: true
+       },
+       by: [
+         "customerId"
+       ],
+       where: {
+         date: {
+           gte: new Date("2024-10-04T22:59:24.308Z")
+         }
+       }
+     })
+
+Unknown field `ping` for select statement on model `MetricsSumAggregateOutputType`. Available options are marked with ?.
+11/10/2024 20:00:44.695 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true,
+             ~~~~
+     ?       latency?: true,
+     ?       packetLoss?: true,
+     ?       traffic?: true
+           }
+         },
+         customerId: true
+       },
+       by: [
+         "customerId"
+       ],
+       where: {
+         date: {
+           gte: new Date("2024-10-04T23:00:44.595Z")
+         }
+       }
+     })
+
+Unknown field `ping` for select statement on model `MetricsSumAggregateOutputType`. Available options are marked with ?.
+11/10/2024 20:01:40.955 [[32minfo[39m]: successfully found clients
+11/10/2024 20:01:45.282 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true,
+             ~~~~
+     ?       latency?: true,
+     ?       packetLoss?: true,
+     ?       traffic?: true
+           }
+         },
+         customerId: true
+       },
+       by: [
+         "customerId"
+       ],
+       where: {
+         date: {
+           gte: new Date("2024-10-04T23:01:45.179Z")
+         }
+       }
+     })
+
+Unknown field `ping` for select statement on model `MetricsSumAggregateOutputType`. Available options are marked with ?.
+11/10/2024 20:03:15.573 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-10-04T23:03:15.464Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 20:03:18.009 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-10-04T23:03:17.926Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 20:03:19.542 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true
+           }
+         },
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-10-04T23:03:19.432Z")
+         }
+       }
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+11/10/2024 20:04:19.873 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true,
+             ~~~~
+     ?       latency?: true,
+     ?       packetLoss?: true,
+     ?       traffic?: true
+           }
+         },
+         customerId: true
+       },
+       by: [
+         "customerId"
+       ],
+       where: {
+         date: {
+           gte: new Date("2024-10-04T23:04:19.773Z")
+         }
+       }
+     })
+
+Unknown field `ping` for select statement on model `MetricsSumAggregateOutputType`. Available options are marked with ?.
+11/10/2024 20:05:12.646 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true,
+             ~~~~
+     ?       latency?: true,
+     ?       packetLoss?: true,
+     ?       traffic?: true
+           }
+         },
+         customerId: true
+       },
+       by: [
+         "customerId"
+       ],
+       where: {
+         date: {
+           gte: new Date("2024-10-04T23:05:12.449Z")
+         }
+       }
+     })
+
+Unknown field `ping` for select statement on model `MetricsSumAggregateOutputType`. Available options are marked with ?.
+11/10/2024 20:06:17.364 [[31merror[39m]: path: src/models/disponibilidade.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:12:43
+
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+  11 // Contar o total de pings e o total de pings conectados (ping: true)
+→ 12 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             ping: {
+               where: {
+               ~~~~~
+                 ping: true
+               }
+             }
+           }
+         },
+         customerId: true
+       },
+       by: [
+         "customerId"
+       ],
+       where: {
+         date: {
+           gte: new Date("2024-10-04T23:06:17.265Z")
+         }
+       }
+     })
+
+Unknown argument `where`.
+11/10/2024 20:12:55.806 [[31merror[39m]: path: src/models/findDisponibility.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:11:43
+
+   8 const sevenDaysAgo = new Date();
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+→ 11 let clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true,
+             ~~~~
+     ?       latency?: true,
+     ?       packetLoss?: true,
+     ?       traffic?: true
+           }
+         },
+         customerId: true
+       },
+       by: [
+         "customerId"
+       ],
+       where: {
+         date: {
+           gte: new Date("2024-10-04T23:12:55.700Z")
+         }
+       }
+     })
+
+Unknown field `ping` for select statement on model `MetricsSumAggregateOutputType`. Available options are marked with ?.
+11/10/2024 20:14:24.148 [[32minfo[39m]: successfully found clients
+11/10/2024 20:16:12.382 [[32minfo[39m]: successfully found clients
+11/10/2024 20:16:38.773 [[32minfo[39m]: successfully found clients
+11/10/2024 20:16:41.380 [[32minfo[39m]: successfully found clients
+11/10/2024 20:17:17.413 [[32minfo[39m]: successfully found clients
+11/10/2024 20:18:20.088 [[32minfo[39m]: successfully found clients
+11/10/2024 20:18:27.733 [[32minfo[39m]: successfully found clients
+11/10/2024 20:19:05.218 [[32minfo[39m]: successfully found clients
+11/10/2024 20:20:14.328 [[32minfo[39m]: successfully found clients
+11/10/2024 20:20:37.055 [[32minfo[39m]: successfully found clients
+11/10/2024 20:29:18.025 [[32minfo[39m]: successfully found client with the most improvement in latency
+11/10/2024 23:30:30.490 [[32minfo[39m]: successfully found clients
+11/10/2024 23:32:54.583 [[32minfo[39m]: successfully found clients
+14/10/2024 00:04:05.436 [[32minfo[39m]: successfully found clients
+14/10/2024 00:04:23.170 [[32minfo[39m]: successfully found clients
+14/10/2024 00:04:41.500 [[32minfo[39m]: successfully found clients
+14/10/2024 00:05:28.927 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 15:57:12.676 [[31merror[39m]: path: src/models/latencyImproviment.js message: Cannot read properties of undefined (reading 'kind')
+14/10/2024 15:57:28.769 [[31merror[39m]: path: src/models/latencyImproviment.js message: Cannot read properties of undefined (reading 'kind')
+14/10/2024 15:57:53.140 [[32minfo[39m]: successfully found clients
+14/10/2024 15:57:55.458 [[31merror[39m]: path: src/models/latencyImproviment.js message: Cannot read properties of undefined (reading 'kind')
+14/10/2024 15:58:24.844 [[31merror[39m]: path: src/models/latencyImproviment.js message: Cannot read properties of undefined (reading 'kind')
+14/10/2024 15:58:30.332 [[32minfo[39m]: successfully found clients
+14/10/2024 15:58:33.621 [[32minfo[39m]: successfully found clients
+14/10/2024 15:58:58.419 [[31merror[39m]: path: src/models/latencyImproviment.js message: Cannot read properties of undefined (reading 'kind')
+14/10/2024 16:00:03.634 [[31merror[39m]: path: src/models/latencyImproviment.js message: Cannot read properties of undefined (reading 'kind')
+14/10/2024 16:02:23.279 [[31merror[39m]: path: src/models/latencyImproviment.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyImproviment.js:15:43
+
+  12 // agrupei as metricas por ID de cliente e ao usar o _avg, o prisma calcula a media da latencia de cada grupo
+  13 //  utilizei  "gte" para trazer valores maiores ou iguais a 7 dias para trazer somentes as metricas mais recentes
+  14 // como a ideia é comparar metricas, também coloquei para nao trazer latencia nula, e apos ordenar de maior pra menor, eu uso o take 1, para trazer o primeiro
+→ 15 let clientes = await prisma.metrics.groupBy({
+       select: {
+         clienteId: true
+       },
+       by: [
+         "clienteId"
+       ],
+       ~~~~~~~~~~~~~
+       where: {
+         date: {
+           gte: new Date("2024-10-07T19:02:23.170Z")
+         },
+         latency: {
+           not: null
+         }
+       },
+       orderBy: {
+         _avg: {
+           latency: "asc"
+         }
+       },
+       take: 1
+     })
+
+Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
+14/10/2024 16:04:41.341 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 16:05:26.080 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 16:10:12.118 [[31merror[39m]: path: src/models/latencyImproviment.js message: grupo is not defined
+14/10/2024 16:14:47.023 [[31merror[39m]: path: src/models/latencyImproviment.js message: grupo is not defined
+14/10/2024 16:16:51.640 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 16:34:03.339 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 16:37:58.894 [[32minfo[39m]: successfully found clients
+14/10/2024 16:38:38.739 [[32minfo[39m]: successfully found clients
+14/10/2024 16:41:58.020 [[32minfo[39m]: successfully found clients
+14/10/2024 16:42:06.097 [[32minfo[39m]: successfully found clients
+14/10/2024 16:46:57.171 [[32minfo[39m]: successfully found clients
+14/10/2024 17:20:08.060 [[32minfo[39m]: successfully found clients
+14/10/2024 17:20:41.114 [[32minfo[39m]: successfully found clients
+14/10/2024 17:22:04.779 [[32minfo[39m]: successfully found clients
+14/10/2024 17:23:02.518 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 17:25:29.560 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 17:36:52.834 [[32minfo[39m]: successfully found clients
+14/10/2024 17:46:41.177 [[31merror[39m]: path: src/controllers/client/packetLossRate.js message: prisma is not defined
+14/10/2024 17:46:50.438 [[31merror[39m]: path: src/controllers/client/packetLossRate.js message: prisma is not defined
+14/10/2024 17:47:07.177 [[32minfo[39m]: successfully found clients
+14/10/2024 17:55:21.597 [[32minfo[39m]: successfully found clients
+14/10/2024 18:02:03.141 [[32minfo[39m]: successfully found clients
+14/10/2024 18:06:17.362 [[32minfo[39m]: successfully found clients
+14/10/2024 18:23:15.375 [[32minfo[39m]: successfully found clients
+14/10/2024 18:54:46.105 [[32minfo[39m]: successfully found clients
+14/10/2024 19:22:35.690 [[31merror[39m]: path: src/models/latencyImprovement.js message: Cannot access 'clientes' before initialization
+14/10/2024 19:23:16.632 [[32minfo[39m]: successfully found clients
+14/10/2024 19:23:59.401 [[32minfo[39m]: successfully found clients
+14/10/2024 19:26:14.105 [[32minfo[39m]: successfully found clients
+14/10/2024 19:40:47.172 [[32minfo[39m]: successfully found clients
+14/10/2024 19:43:12.961 [[32minfo[39m]: successfully found clients
+14/10/2024 19:44:49.124 [[32minfo[39m]: successfully found clients
+14/10/2024 19:47:27.723 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 19:48:59.410 [[32minfo[39m]: successfully found clients
+14/10/2024 19:49:56.515 [[32minfo[39m]: successfully found clients
+14/10/2024 19:50:33.829 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 19:54:03.560 [[32minfo[39m]: successfully found clients
+14/10/2024 19:58:46.137 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:02:10.552 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:02:22.078 [[32minfo[39m]: successfully found clients
+14/10/2024 20:03:03.248 [[32minfo[39m]: successfully found clients
+14/10/2024 20:03:07.776 [[31merror[39m]: path: src/models/latencyAvarageClientes.js message: grupo is not defined
+14/10/2024 20:03:43.337 [[31merror[39m]: path: src/models/latencyAvarageClientes.js message: grupo is not defined
+14/10/2024 20:04:12.420 [[31merror[39m]: path: src/models/latencyAvarageClientes.js message: grupo is not defined
+14/10/2024 20:04:17.477 [[32minfo[39m]: successfully found clients
+14/10/2024 20:04:55.219 [[32minfo[39m]: successfully found clients
+14/10/2024 20:08:49.783 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:11:13.844 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:13:50.488 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:14:20.103 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:14:38.343 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:15:10.188 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:15:27.997 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:19:29.944 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:26:08.762 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:26:53.703 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:26:56.133 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:27:11.442 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:27:31.530 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:29:02.466 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:29:11.442 [[32minfo[39m]: successfully found clients
+14/10/2024 20:31:58.218 [[32minfo[39m]: successfully found clients
+14/10/2024 20:32:05.247 [[32minfo[39m]: successfully found clients
+14/10/2024 20:33:28.921 [[32minfo[39m]: successfully found clients
+14/10/2024 20:35:07.234 [[32minfo[39m]: successfully found clients
+14/10/2024 20:44:59.042 [[32minfo[39m]: successfully found clients
+14/10/2024 20:45:11.969 [[32minfo[39m]: successfully found clients
+14/10/2024 20:45:18.241 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:46:34.387 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:46:39.710 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:46:46.160 [[32minfo[39m]: successfully found clients
+14/10/2024 20:47:55.002 [[32minfo[39m]: successfully found clients
+14/10/2024 20:47:57.999 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:48:17.569 [[32minfo[39m]: successfully found clients
+14/10/2024 20:48:24.629 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:48:47.305 [[32minfo[39m]: successfully found clients
+14/10/2024 20:48:58.935 [[32minfo[39m]: successfully found clients
+14/10/2024 20:49:04.419 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 20:50:57.504 [[32minfo[39m]: successfully found clients
+14/10/2024 20:52:30.641 [[32minfo[39m]: successfully found clients
+14/10/2024 20:54:43.668 [[32minfo[39m]: successfully found clients
+14/10/2024 21:50:06.672 [[32minfo[39m]: successfully found clients
+14/10/2024 21:50:10.190 [[32minfo[39m]: successfully found clients
+14/10/2024 21:50:28.415 [[32minfo[39m]: successfully found clients
+14/10/2024 22:34:01.002 [[32minfo[39m]: successfully found clients

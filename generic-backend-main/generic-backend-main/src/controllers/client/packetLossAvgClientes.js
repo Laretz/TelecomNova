@@ -1,5 +1,5 @@
 const logger = require("../../custom/logger");
-const packetLossRate = require("../../models/packetLossRate");
+const packetLossRate = require("../../models/packetLossAvgClientes");
 
 module.exports = {
     async handle(req, res) {
@@ -11,7 +11,7 @@ module.exports = {
       } catch (error) {
         if (!error.path) {
           // informa o caminho do erro se não tiver
-          error.path = "src/controllers/client/packetLossRate.js";
+          error.path = "src/controllers/client/packetLossAvgClientesController.js";
         }
         throw error;
       }
