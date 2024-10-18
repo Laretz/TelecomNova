@@ -11,7 +11,7 @@ module.exports = {
           packetLoss: true,
         },
         where: {
-          packetLoss: 10,
+          packetLoss: 10,  //{not: 0}
         },
       });
 

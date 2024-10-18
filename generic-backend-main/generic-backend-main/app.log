@@ -1476,3 +1476,779 @@ Invalid value for argument `by`. Expected MetricsScalarFieldEnum.
 14/10/2024 23:12:30.803 [[32minfo[39m]: successfully found clients
 14/10/2024 23:14:08.355 [[32minfo[39m]: successfully found clients
 14/10/2024 23:15:06.858 [[32minfo[39m]: successfully found clients
+14/10/2024 23:23:31.162 [[32minfo[39m]: successfully found client with the most improvement in latency
+14/10/2024 23:32:08.863 [[31merror[39m]: path: src/models/findDisponibility.js message: Cannot read properties of undefined (reading 'findMany')
+14/10/2024 23:33:17.607 [[31merror[39m]: path: src/models/findDisponibility.js message: Cannot read properties of undefined (reading 'findMany')
+14/10/2024 23:33:18.898 [[31merror[39m]: path: src/models/findDisponibility.js message: Cannot read properties of undefined (reading 'findMany')
+14/10/2024 23:33:44.301 [[31merror[39m]: path: src/models/findDisponibility.js message: Cannot read properties of undefined (reading 'findMany')
+14/10/2024 23:34:15.328 [[32minfo[39m]: successfully found clients
+14/10/2024 23:43:47.931 [[32minfo[39m]: successfully found clients
+14/10/2024 23:45:36.504 [[32minfo[39m]: successfully found clients
+14/10/2024 23:46:17.058 [[32minfo[39m]: successfully found clients
+14/10/2024 23:46:57.929 [[32minfo[39m]: successfully found clients
+14/10/2024 23:47:20.961 [[32minfo[39m]: successfully found clients
+14/10/2024 23:47:36.902 [[32minfo[39m]: successfully found clients
+14/10/2024 23:48:38.943 [[32minfo[39m]: successfully found clients
+14/10/2024 23:51:14.385 [[32minfo[39m]: successfully found clients
+14/10/2024 23:51:31.698 [[32minfo[39m]: successfully found clients
+14/10/2024 23:51:33.995 [[32minfo[39m]: successfully found clients
+14/10/2024 23:51:41.181 [[32minfo[39m]: successfully found clients
+14/10/2024 23:52:09.136 [[32minfo[39m]: successfully found clients
+14/10/2024 23:54:23.731 [[32minfo[39m]: successfully found clients
+14/10/2024 23:55:47.042 [[32minfo[39m]: successfully found clients
+14/10/2024 23:56:22.692 [[32minfo[39m]: successfully found clients
+15/10/2024 00:04:31.790 [[32minfo[39m]: successfully found clients
+15/10/2024 00:04:42.762 [[31merror[39m]: path: src/models/findDisponibility.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findDisponibility.js:12:45
+
+   9 sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  10 
+  11 // Agrupar as métricas por customerId e calcular o total de pings e pings conectados
+→ 12 const clientes = await prisma.metrics.groupBy({
+       select: {
+         _count: {
+           select: {
+             id: true
+           }
+         },
+         _sum: {
+           select: {
+             ping: true,
+             ~~~~
+     ?       latency?: true,
+     ?       packetLoss?: true,
+     ?       traffic?: true
+           }
+         },
+         customerId: true
+       },
+       by: [
+         "customerId"
+       ],
+       where: {
+         date: {
+           gte: new Date("2024-10-08T03:04:42.645Z")
+         }
+       }
+     })
+
+Unknown field `ping` for select statement on model `MetricsSumAggregateOutputType`. Available options are marked with ?.
+15/10/2024 00:04:56.496 [[32minfo[39m]: successfully found clients
+15/10/2024 00:08:10.981 [[32minfo[39m]: successfully found clients
+16/10/2024 17:21:13.409 [[32minfo[39m]: successfully found clients
+16/10/2024 17:22:03.478 [[32minfo[39m]: successfully found clients
+16/10/2024 17:23:53.112 [[31merror[39m]: path: src/models/packetLossAvgClientes.js message: notnull is not defined
+16/10/2024 17:24:36.505 [[32minfo[39m]: successfully found clients
+16/10/2024 17:25:16.658 [[32minfo[39m]: successfully found clients
+16/10/2024 18:01:13.587 [[32minfo[39m]: successfully found clients
+16/10/2024 18:09:58.426 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:13:47
+
+  10 const fimDoMes = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0);
+  11 
+  12 // Buscar todos os clientes e suas métricas associadas dentro do mês atual
+→ 13 const resultados = await prisma.metrics.findMany({
+       where: {
+         dataRegistro: {
+         ~~~~~~~~~~~~
+           gte: new Date("2024-10-01T03:00:00.000Z"),
+           lte: new Date("2024-10-31T03:00:00.000Z")
+         },
+     ?   AND?: MetricsWhereInput | MetricsWhereInput[],
+     ?   OR?: MetricsWhereInput[],
+     ?   NOT?: MetricsWhereInput | MetricsWhereInput[],
+     ?   id?: StringFilter | String,
+     ?   date?: DateTimeFilter | DateTime,
+     ?   latency?: IntNullableFilter | Int | Null,
+     ?   packetLoss?: IntNullableFilter | Int | Null,
+     ?   ping?: BoolNullableFilter | Boolean | Null,
+     ?   traffic?: FloatNullableFilter | Float | Null,
+     ?   customerId?: StringFilter | String,
+     ?   customer?: CustomersRelationFilter | CustomersWhereInput
+       },
+       select: {
+         customerId: true,
+         packetLoss: true,
+         ping: true,
+         latency: true
+       }
+     })
+
+Unknown argument `dataRegistro`. Available options are marked with ?.
+16/10/2024 18:10:12.914 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:13:47
+
+  10 const fimDoMes = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0);
+  11 
+  12 // Buscar todos os clientes e suas métricas associadas dentro do mês atual
+→ 13 const resultados = await prisma.metrics.findMany({
+       where: {
+         dataRegistro: {
+         ~~~~~~~~~~~~
+           gte: new Date("2024-10-01T03:00:00.000Z"),
+           lte: new Date("2024-10-31T03:00:00.000Z")
+         },
+     ?   AND?: MetricsWhereInput | MetricsWhereInput[],
+     ?   OR?: MetricsWhereInput[],
+     ?   NOT?: MetricsWhereInput | MetricsWhereInput[],
+     ?   id?: StringFilter | String,
+     ?   date?: DateTimeFilter | DateTime,
+     ?   latency?: IntNullableFilter | Int | Null,
+     ?   packetLoss?: IntNullableFilter | Int | Null,
+     ?   ping?: BoolNullableFilter | Boolean | Null,
+     ?   traffic?: FloatNullableFilter | Float | Null,
+     ?   customerId?: StringFilter | String,
+     ?   customer?: CustomersRelationFilter | CustomersWhereInput
+       },
+       select: {
+         customerId: true,
+         packetLoss: true,
+         ping: true,
+         latency: true
+       }
+     })
+
+Unknown argument `dataRegistro`. Available options are marked with ?.
+16/10/2024 18:13:53.092 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:14:47
+
+  11 const hoje = new Date();
+  12 
+  13 // Buscar todos os clientes e suas métricas associadas nos últimos 7 dias
+→ 14 const resultados = await prisma.metrics.findMany({
+       where: {
+         dataRegistro: {
+         ~~~~~~~~~~~~
+           gte: new Date("2024-10-09T21:13:52.964Z"),
+           lte: new Date("2024-10-16T21:13:52.966Z")
+         },
+     ?   AND?: MetricsWhereInput | MetricsWhereInput[],
+     ?   OR?: MetricsWhereInput[],
+     ?   NOT?: MetricsWhereInput | MetricsWhereInput[],
+     ?   id?: StringFilter | String,
+     ?   date?: DateTimeFilter | DateTime,
+     ?   latency?: IntNullableFilter | Int | Null,
+     ?   packetLoss?: IntNullableFilter | Int | Null,
+     ?   ping?: BoolNullableFilter | Boolean | Null,
+     ?   traffic?: FloatNullableFilter | Float | Null,
+     ?   customerId?: StringFilter | String,
+     ?   customer?: CustomersRelationFilter | CustomersWhereInput
+       },
+       select: {
+         customerId: true,
+         packetLoss: true,
+         ping: true,
+         latency: true
+       }
+     })
+
+Unknown argument `dataRegistro`. Available options are marked with ?.
+16/10/2024 18:15:14.610 [[32minfo[39m]: successfully found clients
+16/10/2024 18:18:34.209 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.count()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:26:51
+
+  23 const resultadosComDetalhes = await Promise.all(
+  24   clientes.map(async (cliente) => {
+  25     // Calcular a disponibilidade para cada cliente com base nos últimos 7 dias
+→ 26     const totalPings = await prisma.metrics.count({
+           select: {
+             _count: {
+               select: {
+                 _all: true
+               }
+             }
+           },
+           where: {
+             customerId: "8f2c4069-92c4-485c-90f4-bc61f42760bf",
+             dataRegistro: {
+             ~~~~~~~~~~~~
+               gte: new Date("2024-10-09T21:18:33.828Z"),
+               lte: new Date("2024-10-16T21:18:33.829Z")
+             },
+         ?   AND?: MetricsWhereInput | MetricsWhereInput[],
+         ?   OR?: MetricsWhereInput[],
+         ?   NOT?: MetricsWhereInput | MetricsWhereInput[],
+         ?   id?: StringFilter | String,
+         ?   date?: DateTimeFilter | DateTime,
+         ?   latency?: IntNullableFilter | Int | Null,
+         ?   packetLoss?: IntNullableFilter | Int | Null,
+         ?   ping?: BoolNullableFilter | Boolean | Null,
+         ?   traffic?: FloatNullableFilter | Float | Null,
+         ?   customer?: CustomersRelationFilter | CustomersWhereInput
+           }
+         })
+
+Unknown argument `dataRegistro`. Available options are marked with ?.
+16/10/2024 20:31:32.806 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.count()` invocation:
+
+{
+  select: {
+    _count: {
+      select: {
+        _all: true
+      }
+    }
+  },
+  where: {
+    customerId: "99f06886-29ce-441b-95f4-751dc54db2c4",
+    dataRegistro: {
+    ~~~~~~~~~~~~
+      gte: new Date("2024-10-09T23:31:32.492Z"),
+      lte: new Date("2024-10-16T23:31:32.492Z")
+    },
+?   AND?: MetricsWhereInput | MetricsWhereInput[],
+?   OR?: MetricsWhereInput[],
+?   NOT?: MetricsWhereInput | MetricsWhereInput[],
+?   id?: StringFilter | String,
+?   date?: DateTimeFilter | DateTime,
+?   latency?: IntNullableFilter | Int | Null,
+?   packetLoss?: IntNullableFilter | Int | Null,
+?   ping?: BoolNullableFilter | Boolean | Null,
+?   traffic?: FloatNullableFilter | Float | Null,
+?   customer?: CustomersRelationFilter | CustomersWhereInput
+  }
+}
+
+Unknown argument `dataRegistro`. Available options are marked with ?.
+16/10/2024 20:34:56.976 [[32minfo[39m]: successfully found clients
+16/10/2024 20:39:20.397 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.customers.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:12:47
+
+   9 async execute() {
+  10   try {
+  11     // 1. Buscar todos os clientes e suas métricas associadas
+→ 12     const clientes = await prisma.customers.findMany({
+           include: {
+             metrics: true,
+             ~~~~~~~
+         ?   Metrics?: true
+           }
+         })
+
+Unknown field `metrics` for include statement on model `Customers`. Available options are marked with ?.
+16/10/2024 20:42:40.876 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.customers.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:12:47
+
+   9 async execute() {
+  10   try {
+  11     // 1. Buscar todos os clientes e suas métricas associadas
+→ 12     const clientes = await prisma.customers.findMany({
+           include: {
+             metrics: true,
+             ~~~~~~~
+         ?   Metrics?: true
+           }
+         })
+
+Unknown field `metrics` for include statement on model `Customers`. Available options are marked with ?.
+16/10/2024 20:43:00.684 [[32minfo[39m]: successfully found clients
+16/10/2024 20:50:56.105 [[32minfo[39m]: successfully found clients
+16/10/2024 20:52:46.901 [[32minfo[39m]: successfully found clients
+16/10/2024 20:55:19.153 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:9:47
+
+  6 async execute() {
+  7   try {
+  8     // 1. Buscar todos os clientes e suas métricas associadas
+→ 9     const resultados = await prisma.metrics.groupBy(
+Input error. Every selected scalar field that is not part of an aggregation must be included in the by-arguments of the query. Missing fields: packetLoss, ping, latency
+16/10/2024 20:58:26.655 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:8:56
+
+  5 async execute() {
+  6   try {
+  7     // 1. Buscar métricas agrupadas por customerId
+→ 8     const resultadosAgrupados = await prisma.metrics.groupBy({
+          select: {
+            _avg: {
+              select: {
+                packetLoss: true,
+                ping: true,
+                ~~~~
+                latency: true,
+        ?       traffic?: true
+              }
+            },
+            _max: {
+              select: {
+                latency: true
+              }
+            },
+            customerId: true
+          },
+          by: [
+            "customerId"
+          ]
+        })
+
+Unknown field `ping` for select statement on model `MetricsAvgAggregateOutputType`. Available options are marked with ?.
+16/10/2024 20:59:18.910 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:8:56
+
+  5 async execute() {
+  6   try {
+  7     // 1. Buscar métricas agrupadas por customerId
+→ 8     const resultadosAgrupados = await prisma.metrics.groupBy({
+          select: {
+            _avg: {
+              select: {
+                packetLoss: true,
+                ping: true,
+                ~~~~
+                latency: true,
+        ?       traffic?: true
+              }
+            },
+            _max: {
+              select: {
+                latency: true
+              }
+            },
+            customerId: true
+          },
+          by: [
+            "customerId"
+          ]
+        })
+
+Unknown field `ping` for select statement on model `MetricsAvgAggregateOutputType`. Available options are marked with ?.
+16/10/2024 20:59:36.063 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:8:56
+
+  5 async execute() {
+  6   try {
+  7     // 1. Buscar métricas agrupadas por customerId
+→ 8     const resultadosAgrupados = await prisma.metrics.groupBy({
+          select: {
+            _avg: {
+              select: {
+                packetLoss: true,
+                ping: true,
+                ~~~~
+                latency: true,
+        ?       traffic?: true
+              }
+            },
+            _max: {
+              select: {
+                latency: true
+              }
+            },
+            customerId: true
+          },
+          by: [
+            "customerId"
+          ]
+        })
+
+Unknown field `ping` for select statement on model `MetricsAvgAggregateOutputType`. Available options are marked with ?.
+16/10/2024 21:00:33.021 [[32minfo[39m]: successfully found clients
+16/10/2024 21:04:46.764 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:9:56
+
+  6 async execute() {
+  7   try {
+  8     // 1. Buscar métricas agrupadas por customerId
+→ 9     const resultadosAgrupados = await prisma.metrics.groupBy({
+          select: {
+            _avg: {
+              select: {
+                packetLoss: true,
+                latency: true
+              }
+            },
+            _max: {
+              select: {
+                latency: true
+              }
+            },
+            customerId: true
+          },
+          by: [
+            "customerId"
+          ],
+          _last: {
+          ~~~~~
+            ping: true
+          },
+        ? where?: MetricsWhereInput,
+        ? orderBy?: MetricsOrderByWithAggregationInput[] | MetricsOrderByWithAggregationInput,
+        ? having?: MetricsScalarWhereWithAggregatesInput,
+        ? take?: Int,
+        ? skip?: Int
+        })
+
+Unknown argument `_last`. Available options are marked with ?.
+16/10/2024 21:05:56.358 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:9:56
+
+  6 async execute() {
+  7   try {
+  8     // 1. Buscar métricas agrupadas por customerId
+→ 9     const resultadosAgrupados = await prisma.metrics.groupBy({
+          select: {
+            _avg: {
+              select: {
+                packetLoss: true,
+                latency: true
+              }
+            },
+            _max: {
+              select: {
+                latency: true
+              }
+            },
+            customerId: true
+          },
+          by: [
+            "customerId"
+          ],
+          _last: {
+          ~~~~~
+            ping: true
+          },
+        ? where?: MetricsWhereInput,
+        ? orderBy?: MetricsOrderByWithAggregationInput[] | MetricsOrderByWithAggregationInput,
+        ? having?: MetricsScalarWhereWithAggregatesInput,
+        ? take?: Int,
+        ? skip?: Int
+        })
+
+Unknown argument `_last`. Available options are marked with ?.
+16/10/2024 21:06:31.922 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:9:56
+
+  6 async execute() {
+  7   try {
+  8     // 1. Buscar métricas agrupadas por customerId
+→ 9     const resultadosAgrupados = await prisma.metrics.groupBy({
+          select: {
+            _avg: {
+              select: {
+                packetLoss: true,
+                latency: true
+              }
+            },
+            _max: {
+              select: {
+                latency: true
+              }
+            },
+            customerId: true
+          },
+          by: [
+            "customerId"
+          ],
+          _last: {
+          ~~~~~
+            ping: true
+          },
+        ? where?: MetricsWhereInput,
+        ? orderBy?: MetricsOrderByWithAggregationInput[] | MetricsOrderByWithAggregationInput,
+        ? having?: MetricsScalarWhereWithAggregatesInput,
+        ? take?: Int,
+        ? skip?: Int
+        })
+
+Unknown argument `_last`. Available options are marked with ?.
+16/10/2024 21:06:46.389 [[32minfo[39m]: successfully found clients
+16/10/2024 21:08:43.157 [[32minfo[39m]: successfully found client with the most improvement in latency
+16/10/2024 21:10:18.248 [[32minfo[39m]: successfully found clients
+16/10/2024 21:13:40.831 [[32minfo[39m]: successfully found clients
+16/10/2024 21:24:38.885 [[32minfo[39m]: successfully found client with the most improvement in latency
+16/10/2024 21:25:15.111 [[32minfo[39m]: successfully found client with the most improvement in latency
+16/10/2024 21:27:41.939 [[32minfo[39m]: successfully found clients
+16/10/2024 21:28:19.953 [[32minfo[39m]: successfully found clients
+16/10/2024 21:31:24.866 [[31merror[39m]: path: src/models/perfisClientes.js message: Cannot access 'dadosCliente' before initialization
+16/10/2024 21:33:21.635 [[32minfo[39m]: successfully found clients
+16/10/2024 21:33:50.064 [[32minfo[39m]: successfully found clients
+16/10/2024 21:45:17.789 [[32minfo[39m]: successfully found clients
+16/10/2024 21:47:02.358 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:9:54
+
+  6 async execute() {
+  7   try {
+  8     // Agrupar métricas por customerId e calcular média de packetLoss e latência
+→ 9     let clientesPorMetricas = await prisma.metrics.groupBy({
+          select: {
+            _avg: {
+              select: {
+                packetLoss: true,
+                latency: true
+              }
+            },
+            _max: {
+              select: {
+                latency: true
+              }
+            },
+            customerId: true
+          },
+          by: [
+            "customerId"
+          ],
+          where: {
+            ping: {
+              not: false
+            },
+            orderBy: {
+            ~~~~~~~
+              perfil: "asc"
+            },
+        ?   AND?: MetricsWhereInput | MetricsWhereInput[],
+        ?   OR?: MetricsWhereInput[],
+        ?   NOT?: MetricsWhereInput | MetricsWhereInput[],
+        ?   id?: StringFilter | String,
+        ?   date?: DateTimeFilter | DateTime,
+        ?   latency?: IntNullableFilter | Int | Null,
+        ?   packetLoss?: IntNullableFilter | Int | Null,
+        ?   traffic?: FloatNullableFilter | Float | Null,
+        ?   customerId?: StringFilter | String,
+        ?   customer?: CustomersRelationFilter | CustomersWhereInput
+          }
+        })
+
+Unknown argument `orderBy`. Available options are marked with ?.
+16/10/2024 21:50:28.572 [[31merror[39m]: path: src/models/perfisClientes.js message: Cannot read properties of null (reading 'perfil')
+16/10/2024 21:52:53.452 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:9:54
+
+  6 async execute() {
+  7   try {
+  8     // Agrupar métricas por customerId e calcular média de packetLoss e latência
+→ 9     let clientesPorMetricas = await prisma.metrics.groupBy({
+          select: {
+            _avg: {
+              select: {
+                packetLoss: true,
+                latency: true
+              }
+            },
+            _max: {
+              select: {
+                latency: true
+              }
+            },
+            customerId: true
+          },
+          by: [
+            "customerId"
+          ],
+          where: {
+            ping: {
+              not: false
+            }
+          },
+          orderBy: {
+            perfil: "asc",
+            ~~~~~~
+        ?   id?: SortOrder,
+        ?   date?: SortOrder,
+        ?   latency?: SortOrder | SortOrderInput,
+        ?   packetLoss?: SortOrder | SortOrderInput,
+        ?   ping?: SortOrder | SortOrderInput,
+        ?   traffic?: SortOrder | SortOrderInput,
+        ?   customerId?: SortOrder,
+        ?   _count?: MetricsCountOrderByAggregateInput,
+        ?   _avg?: MetricsAvgOrderByAggregateInput,
+        ?   _max?: MetricsMaxOrderByAggregateInput,
+        ?   _min?: MetricsMinOrderByAggregateInput,
+        ?   _sum?: MetricsSumOrderByAggregateInput
+          }
+        })
+
+Unknown argument `perfil`. Available options are marked with ?.
+16/10/2024 21:55:16.837 [[32minfo[39m]: successfully found clients
+16/10/2024 22:27:31.977 [[32minfo[39m]: successfully found clients
+16/10/2024 22:27:36.819 [[31merror[39m]: path: src/models/perfisClientes.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\findManyClientes.js:9:54
+
+  6 async execute() {
+  7   try {
+  8     // Agrupar métricas por customerId e calcular média de packetLoss e latência
+→ 9     let clientesPorMetricas = await prisma.metrics.groupBy({
+          select: {
+            _avg: {
+              select: {
+                packetLoss: true,
+                latency: true
+              }
+            },
+            _max: {
+              select: {
+                latency: true
+              }
+            },
+            customerId: true
+          },
+          by: [
+            "customerId"
+          ],
+          where: {
+            ping: {
+              not: false
+            }
+          },
+          orderBy: {
+            perfil: "asc",
+            ~~~~~~
+        ?   id?: SortOrder,
+        ?   date?: SortOrder,
+        ?   latency?: SortOrder | SortOrderInput,
+        ?   packetLoss?: SortOrder | SortOrderInput,
+        ?   ping?: SortOrder | SortOrderInput,
+        ?   traffic?: SortOrder | SortOrderInput,
+        ?   customerId?: SortOrder,
+        ?   _count?: MetricsCountOrderByAggregateInput,
+        ?   _avg?: MetricsAvgOrderByAggregateInput,
+        ?   _max?: MetricsMaxOrderByAggregateInput,
+        ?   _min?: MetricsMinOrderByAggregateInput,
+        ?   _sum?: MetricsSumOrderByAggregateInput
+          }
+        })
+
+Unknown argument `perfil`. Available options are marked with ?.
+16/10/2024 22:27:48.257 [[32minfo[39m]: successfully found clients
+16/10/2024 22:52:00.998 [[32minfo[39m]: successfully found clients
+17/10/2024 21:20:53.844 [[32minfo[39m]: successfully found clients
+17/10/2024 21:23:32.603 [[32minfo[39m]: successfully found clients
+17/10/2024 21:57:53.728 [[32minfo[39m]: successfully found clients
+17/10/2024 21:58:07.591 [[32minfo[39m]: successfully found clients
+17/10/2024 22:15:30.530 [[32minfo[39m]: successfully found clients
+17/10/2024 22:20:17.639 [[31merror[39m]: path: src/models/latencyMoreThan50Clientes.js message: 
+Invalid `prisma.metrics.groupBy()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50Clientes.js:9:43
+
+  6 async execute() {
+  7   try {
+  8     // pega todos os clientes que a latencia seja maior que 50 e traz apenas a latencia e o nome do customer, evitando carregar informações denecessarias
+→ 9     let clientes = await prisma.metrics.groupBy({
+          select: {
+          ~~~~~~
+            _count: {
+              select: {
+                latency: true
+              }
+            },
+            _max: {
+              select: {
+                latency: true
+              }
+            },
+            _min: {
+              select: {
+                latency: true
+              }
+            },
+            _avg: {
+              select: {
+                latency: true
+              }
+            },
+            customerId: true
+          },
+          by: [
+            "customerId"
+          ],
+          where: {
+            latency: {
+              gt: 50
+            }
+          },
+          include: {
+          ~~~~~~~
+            customer: {
+              select: {
+                name: true
+              }
+            }
+          },
+          orderBy: {
+            _count: {
+              latency: "desc"
+            }
+          }
+        })
+
+Please either use `include` or `select`, but not both at the same time.
+17/10/2024 22:23:56.188 [[32minfo[39m]: successfully found clients
+17/10/2024 22:23:58.558 [[31merror[39m]: path: src/models/latencyMoreThan50Clientes.js message: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50Clientes.js:9:43
+
+  6 async execute() {
+  7   try {
+  8     // pega todos os clientes que a latencia seja maior que 50 e traz apenas a latencia e o nome do customer, evitando carregar informações denecessarias
+→ 9     let clientes = await prisma.metrics.findMany({
+          select: {
+          ~~~~~~
+            _count: {
+              select: {
+                latency: true
+              }
+            },
+            _max: {
+              select: {
+                latency: true
+              }
+            },
+            _min: {
+              select: {
+                latency: true
+              }
+            },
+            _avg: {
+              select: {
+                latency: true
+              }
+            },
+            customerId: true
+          },
+          by: [
+            "customerId"
+          ],
+          where: {
+            latency: {
+              gt: 50
+            }
+          },
+          include: {
+          ~~~~~~~
+            customer: {
+              select: {
+                name: true
+              }
+            }
+          },
+          orderBy: {
+            _count: {
+              latency: "desc"
+            }
+          }
+        })
+
+Please either use `include` or `select`, but not both at the same time.
+17/10/2024 22:24:27.667 [[32minfo[39m]: successfully found clients
+17/10/2024 22:27:56.834 [[32minfo[39m]: successfully found clients
+17/10/2024 22:28:03.943 [[32minfo[39m]: successfully found clients
+17/10/2024 22:29:45.320 [[32minfo[39m]: successfully found clients
+17/10/2024 22:36:49.268 [[32minfo[39m]: successfully found clients
+17/10/2024 22:37:04.133 [[32minfo[39m]: successfully found client with the most improvement in latency
