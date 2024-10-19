@@ -5,7 +5,6 @@ const prisma = new PrismaClient();
 module.exports = {
   async execute() {
     try {
-      // Agrupar métricas por customerId e calcular média de packetLoss e latência
       let clientesPorMetricas = await prisma.metrics.groupBy({
         by: ['customerId'],
         _avg: {
@@ -54,37 +53,35 @@ module.exports = {
 
 
           switch (clienteDetalhes.perfil) {
-            case 1: // Apenas PING
+            case 1:
               dadosCliente.metrics = clienteDetalhes.Metrics.map((metrica) => ({
                 ping: metrica.ping,
               }));
               break;
 
-            case 2: // PING e Perda de Pacotes
+            case 2:
               dadosCliente.metrics = clienteDetalhes.Metrics.map((metrica) => ({
                 ping: metrica.ping,
                 packetLoss: metrica.packetLoss,
               }));
               break;
 
-              case 3: // PING com Latência Máxima de 50ms
+              case 3: 
 
-                // Cálculo da disponibilidade
+                
                 const totalMetrics = clienteDetalhes.Metrics.length; 
                 const successfulPings = clienteDetalhes.Metrics.filter(metrica => metrica.ping).length; 
                 const disponibilidade = (successfulPings / totalMetrics) * 100; 
 
-                // Adiciona a disponibilidade calculada ao objeto do cliente primeiro
                 dadosCliente.disponibilidade = disponibilidade.toFixed(2) + '%';
 
-                // Verificação da latência e status
                 dadosCliente.metrics = clienteDetalhes.Metrics.map((metrica) => ({
                   ping: metrica.ping,
                   latency: metrica.latency,
                   latencyStatus:
                     metrica.latency <= 50
-                      ? "Latência dentro do permitido (<= 50ms)"
-                      : "Latência alta (> 50ms)",
+                      ? "Latência dentro dos padrões (<= 50ms)"
+                      : "Latência fora de padrão (> 50ms)",
                 }));
 
               break;
