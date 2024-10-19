@@ -5,7 +5,7 @@ module.exports = {
   async execute() {
     try {
       const sevenDaysAgo = new Date();
-      sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 14);
+      sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
 
       const clientes = await prisma.customers.findMany();
 

@@ -26,8 +26,7 @@ module.exports = {
           _avg: {
             latency: 'asc',
           },
-        },
-        take: 3, 
+        }
       });
       // nessa segunda parte, para cada grupo em clientesPorMediaDeLatencia que a gente ja obteve, buscamos algumas metricas necesarias: id data e latencia
       let clientes = await Promise.all(
