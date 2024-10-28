@@ -1,13 +1,11 @@
 import './App.css'
-import * as React from 'react';
-import PacketLossGraphComponent from './components/packetloss';
-import Dashboard from './pages/dashboard';
+import Dashboard from './pages/Dashboard';
 
 function App() {
 
 
   return ( 
-    <Dashboard/> 
+    <Dashboard /> 
   );
 }
 

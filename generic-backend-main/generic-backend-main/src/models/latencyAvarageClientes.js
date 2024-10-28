@@ -45,14 +45,14 @@ module.exports = {
               },
             },
           });
-          return {  //no retorno ele ta retornando um objeto com essas 3 caracteristicas para cada grupo
+          return {  //no retorno ele ta retornando um objeto com essas 3 atributos para cada grupo
             avgLatency: grupo._avg.latency, 
             customerDetails: clienteDetalhes, 
           };
         })
       );
 
-      return clientes; // Retorna a lista de clientes com a média de latência
+      return clientes; // Retorna a lista de clientes com a média de latencia
     } catch (error) {
       // Tratamento de erros
       error.path = "src/models/packetLossAvgClientes.js";

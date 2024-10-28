@@ -15,33 +15,33 @@ module.exports = {
             where: {
               customerId: cliente.id,
               date: {
-                gte: sevenDaysAgo, 
+                gte: sevenDaysAgo,
+              },
+              ping: {
+                not: null,
               },
             },
           });
 
-          const totalPings = metrics.length; 
-          const pingsConectados = metrics.filter(m => m.ping === true).length;  
+          // aqui estamos medindo a quantidade de pings total e a quantidade que tinha o valor true para calcular a disponibilidade
+          const totalPings = metrics.length;
+          const pingsConectados = metrics.filter(m => m.ping === true).length;
+          const pingsDesconectados = metrics.filter(m => m.ping === false).length;
 
           if (totalPings === 0) {
             return null; 
           }
 
-
+         
           const disponibilidade = (pingsConectados / totalPings) * 100;
 
-
-          if (disponibilidade) {
-            return {
-              ...cliente,
-              disponibilidade: disponibilidade.toFixed(2) + '%',
-            };
-          } else {
-            return null;
-          }
+          return {
+            ...cliente,
+            disponibilidade: disponibilidade.toFixed(2) + '%',
+            pingsDesconectados,
+          };
         })
       );
-
 
       return clientesDisponiveis.filter(cliente => cliente !== null);
 
@@ -49,7 +49,7 @@ module.exports = {
       error.path = "src/models/findDisponibility.js";
       throw error;
     } finally {
-      await prisma.$disconnect(); 
+      await prisma.$disconnect();
     }
   },
 };

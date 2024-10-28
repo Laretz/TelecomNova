@@ -10,8 +10,17 @@ module.exports = {
         where: {
           latency: {
                 gt: 50  
-          }
+          },
+          customer: {
+            perfil: {
+              equals: 3, 
+            },
+          },
         },
+        orderBy: 
+        {
+          date: 'asc' 
+         },
         select: {
           latency: true,
           date: true,
@@ -21,9 +30,6 @@ module.exports = {
             }
           }
         },
-        orderBy: {
-          latency: 'desc'
-        }
       });
       return clientes;
     } catch (error) {

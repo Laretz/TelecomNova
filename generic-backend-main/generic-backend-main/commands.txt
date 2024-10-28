@@ -1,0 +1,15 @@
+DATABASE_URL="postgresql://postgres:123123@localhost:5432/genericDB?schema=public"  // dados para o postgres local do meu pc
+
+DATABASE_URL="postgresql://pguser:pgpassword@localhost:5433/genericDB?schema=public"  // dados para o bacno rodando em docker
+
+docker exec -it generic-backend-main-db-1 psql -U pguser -d genericDB  // conectar ao banco de daos para testar conexãpo
+
+npx prisma migrate dev
+npx prisma db seed
+npx prisma generate
+nppm start
+
+
+npm install
+$ npm create vite@latest
+npm run dev
