@@ -14,9 +14,6 @@ module.exports = {
           const metrics = await prisma.metrics.findMany({
             where: {
               customerId: cliente.id,
-              date: {
-                gte: sevenDaysAgo,
-              },
               ping: {
                 not: null,
               },

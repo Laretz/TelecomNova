@@ -4781,3 +4781,208 @@ Please make sure your database server is running at `localhost:5433`.
 28/10/2024 08:58:37.479 [[32minfo[39m]: successfully found clients
 28/10/2024 08:58:37.752 [[32minfo[39m]: successfully found client with the most improvement in latency
 28/10/2024 09:01:05.952 [[32minfo[39m]: successfully found clients
+28/10/2024 13:25:31.322 [[32minfo[39m]: successfully found clients
+28/10/2024 13:25:31.760 [[32minfo[39m]: successfully found clients
+28/10/2024 13:25:32.141 [[32minfo[39m]: successfully found clients
+28/10/2024 13:25:32.223 [[32minfo[39m]: successfully found clients
+28/10/2024 13:25:32.388 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:27:23.082 [[32minfo[39m]: successfully found clients
+28/10/2024 13:27:23.398 [[32minfo[39m]: successfully found clients
+28/10/2024 13:27:23.674 [[32minfo[39m]: successfully found clients
+28/10/2024 13:27:23.775 [[32minfo[39m]: successfully found clients
+28/10/2024 13:27:23.948 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:28:29.856 [[32minfo[39m]: successfully found clients
+28/10/2024 13:28:32.306 [[32minfo[39m]: successfully found clients
+28/10/2024 13:28:32.696 [[32minfo[39m]: successfully found clients
+28/10/2024 13:28:32.976 [[32minfo[39m]: successfully found clients
+28/10/2024 13:28:33.123 [[32minfo[39m]: successfully found clients
+28/10/2024 13:28:33.295 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:28:51.094 [[32minfo[39m]: successfully found clients
+28/10/2024 13:29:54.441 [[32minfo[39m]: successfully found clients
+28/10/2024 13:29:54.804 [[32minfo[39m]: successfully found clients
+28/10/2024 13:29:55.072 [[32minfo[39m]: successfully found clients
+28/10/2024 13:29:55.240 [[32minfo[39m]: successfully found clients
+28/10/2024 13:29:55.406 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:30:41.830 [[32minfo[39m]: successfully found clients
+28/10/2024 13:30:42.175 [[32minfo[39m]: successfully found clients
+28/10/2024 13:30:42.496 [[32minfo[39m]: successfully found clients
+28/10/2024 13:30:42.628 [[32minfo[39m]: successfully found clients
+28/10/2024 13:30:42.775 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:34:08.795 [[32minfo[39m]: successfully found clients
+28/10/2024 13:34:09.131 [[32minfo[39m]: successfully found clients
+28/10/2024 13:34:09.407 [[32minfo[39m]: successfully found clients
+28/10/2024 13:34:09.575 [[32minfo[39m]: successfully found clients
+28/10/2024 13:34:09.781 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:35:29.774 [[32minfo[39m]: successfully found clients
+28/10/2024 13:35:30.071 [[32minfo[39m]: successfully found clients
+28/10/2024 13:35:30.326 [[32minfo[39m]: successfully found clients
+28/10/2024 13:35:30.461 [[32minfo[39m]: successfully found clients
+28/10/2024 13:35:30.611 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:36:03.886 [[32minfo[39m]: successfully found clients
+28/10/2024 13:36:04.214 [[32minfo[39m]: successfully found clients
+28/10/2024 13:36:04.528 [[32minfo[39m]: successfully found clients
+28/10/2024 13:36:04.693 [[32minfo[39m]: successfully found clients
+28/10/2024 13:36:04.839 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:36:18.637 [[32minfo[39m]: successfully found clients
+28/10/2024 13:36:19.059 [[32minfo[39m]: successfully found clients
+28/10/2024 13:36:19.245 [[32minfo[39m]: successfully found clients
+28/10/2024 13:36:19.339 [[32minfo[39m]: successfully found clients
+28/10/2024 13:36:19.471 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:42:35.183 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:42:36.366 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:42:38.605 [[32minfo[39m]: successfully found clients
+28/10/2024 13:42:38.952 [[32minfo[39m]: successfully found clients
+28/10/2024 13:42:39.140 [[32minfo[39m]: successfully found clients
+28/10/2024 13:42:39.232 [[32minfo[39m]: successfully found clients
+28/10/2024 13:42:39.393 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:43:37.795 [[32minfo[39m]: successfully found clients
+28/10/2024 13:43:38.109 [[32minfo[39m]: successfully found clients
+28/10/2024 13:43:38.500 [[32minfo[39m]: successfully found clients
+28/10/2024 13:43:38.603 [[32minfo[39m]: successfully found clients
+28/10/2024 13:43:38.760 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:44:36.921 [[32minfo[39m]: successfully found clients
+28/10/2024 13:45:23.748 [[32minfo[39m]: successfully found clients
+28/10/2024 13:45:24.169 [[32minfo[39m]: successfully found clients
+28/10/2024 13:45:24.365 [[32minfo[39m]: successfully found clients
+28/10/2024 13:45:24.480 [[32minfo[39m]: successfully found clients
+28/10/2024 13:45:24.611 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:45:38.823 [[32minfo[39m]: successfully found clients
+28/10/2024 13:45:40.557 [[32minfo[39m]: successfully found clients
+28/10/2024 13:45:46.833 [[32minfo[39m]: successfully found clients
+28/10/2024 13:45:47.035 [[32minfo[39m]: successfully found clients
+28/10/2024 13:45:47.364 [[32minfo[39m]: successfully found clients
+28/10/2024 13:45:47.486 [[32minfo[39m]: successfully found clients
+28/10/2024 13:45:47.785 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:46:22.801 [[32minfo[39m]: successfully found clients
+28/10/2024 13:46:23.067 [[32minfo[39m]: successfully found clients
+28/10/2024 13:46:23.299 [[32minfo[39m]: successfully found clients
+28/10/2024 13:46:23.459 [[32minfo[39m]: successfully found clients
+28/10/2024 13:46:23.592 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:46:59.778 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:00.891 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:03.875 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:06.000 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:06.297 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:06.529 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:06.629 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:06.755 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:47:11.903 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:27.262 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:27.551 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:27.750 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:27.902 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:28.017 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:47:55.229 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:55.538 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:55.783 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:55.893 [[32minfo[39m]: successfully found clients
+28/10/2024 13:47:56.016 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 13:48:33.027 [[32minfo[39m]: successfully found clients
+28/10/2024 13:48:33.392 [[32minfo[39m]: successfully found clients
+28/10/2024 13:48:33.672 [[32minfo[39m]: successfully found clients
+28/10/2024 13:48:33.683 [[32minfo[39m]: successfully found clients
+28/10/2024 13:48:33.822 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 14:18:54.010 [[32minfo[39m]: successfully found clients
+28/10/2024 14:18:54.364 [[32minfo[39m]: successfully found clients
+28/10/2024 14:18:54.581 [[32minfo[39m]: successfully found clients
+28/10/2024 14:18:54.749 [[32minfo[39m]: successfully found clients
+28/10/2024 14:18:54.889 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 15:47:47.321 [[32minfo[39m]: successfully found clients
+28/10/2024 15:47:47.768 [[32minfo[39m]: successfully found clients
+28/10/2024 15:47:48.132 [[32minfo[39m]: successfully found clients
+28/10/2024 15:47:48.351 [[32minfo[39m]: successfully found clients
+28/10/2024 15:47:48.552 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 15:58:20.039 [[32minfo[39m]: successfully found clients
+28/10/2024 15:58:27.646 [[32minfo[39m]: successfully found clients
+28/10/2024 16:10:52.100 [[32minfo[39m]: successfully found clients
+28/10/2024 16:34:05.000 [[32minfo[39m]: successfully found clients
+28/10/2024 16:34:05.733 [[32minfo[39m]: successfully found clients
+28/10/2024 16:34:05.748 [[32minfo[39m]: successfully found clients
+28/10/2024 16:34:05.932 [[32minfo[39m]: successfully found clients
+28/10/2024 16:34:06.284 [[32minfo[39m]: successfully found client with the most improvement in latency
+28/10/2024 16:34:15.325 [[32minfo[39m]: successfully found clients
+28/10/2024 16:34:33.185 [[32minfo[39m]: successfully found clients
+17/11/2024 23:16:55.970 [[31merror[39m]: path: src/models/latencyMoreThan50Clientes.js message: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50Clientes.js:9:43
+
+  6 async execute() {
+  7   try {
+  8     // pega todos os clientes que a latencia seja maior que 50 e traz apenas a latencia e o nome do customer, evitando carregar informações denecessarias
+→ 9     let clientes = await prisma.metrics.findMany(
+Can't reach database server at `localhost:5433`
+
+Please make sure your database server is running at `localhost:5433`.
+17/11/2024 23:16:55.997 [[31merror[39m]: path: src/models/latencyMoreThan50Clientes.js message: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50Clientes.js:9:43
+
+  6 async execute() {
+  7   try {
+  8     // pega todos os clientes que a latencia seja maior que 50 e traz apenas a latencia e o nome do customer, evitando carregar informações denecessarias
+→ 9     let clientes = await prisma.metrics.findMany(
+Can't reach database server at `localhost:5433`
+
+Please make sure your database server is running at `localhost:5433`.
+17/11/2024 23:17:47.104 [[31merror[39m]: path: src/models/latencyMoreThan50Clientes.js message: 
+Invalid `prisma.metrics.findMany()` invocation in
+C:\Users\renat\Dev\CactusSoft\generic-backend-main\generic-backend-main\src\models\latencyMoreThan50Clientes.js:9:43
+
+  6 async execute() {
+  7   try {
+  8     // pega todos os clientes que a latencia seja maior que 50 e traz apenas a latencia e o nome do customer, evitando carregar informações denecessarias
+→ 9     let clientes = await prisma.metrics.findMany(
+Can't reach database server at `localhost:5433`
+
+Please make sure your database server is running at `localhost:5433`.
+17/11/2024 23:24:01.533 [[32minfo[39m]: successfully found clients
+17/11/2024 23:24:01.698 [[32minfo[39m]: successfully found client with the most improvement in latency
+17/11/2024 23:24:01.716 [[32minfo[39m]: successfully found clients
+17/11/2024 23:24:02.068 [[32minfo[39m]: successfully found clients
+17/11/2024 23:24:02.187 [[32minfo[39m]: successfully found clients
+17/11/2024 23:24:35.777 [[32minfo[39m]: successfully found clients
+17/11/2024 23:24:35.905 [[32minfo[39m]: successfully found client with the most improvement in latency
+17/11/2024 23:24:35.983 [[32minfo[39m]: successfully found clients
+17/11/2024 23:24:36.268 [[32minfo[39m]: successfully found clients
+17/11/2024 23:24:36.433 [[32minfo[39m]: successfully found clients
+17/11/2024 23:25:08.722 [[32minfo[39m]: successfully found clients
+17/11/2024 23:25:08.833 [[32minfo[39m]: successfully found client with the most improvement in latency
+17/11/2024 23:25:08.954 [[32minfo[39m]: successfully found clients
+17/11/2024 23:25:09.191 [[32minfo[39m]: successfully found clients
+17/11/2024 23:25:09.314 [[32minfo[39m]: successfully found clients
+17/11/2024 23:26:12.452 [[32minfo[39m]: successfully found clients
+17/11/2024 23:26:16.479 [[32minfo[39m]: successfully found clients
+17/11/2024 23:26:18.840 [[32minfo[39m]: successfully found clients
+17/11/2024 23:26:24.948 [[32minfo[39m]: successfully found clients
+17/11/2024 23:26:47.564 [[32minfo[39m]: successfully found clients
+17/11/2024 23:26:59.436 [[32minfo[39m]: successfully found clients
+17/11/2024 23:27:03.794 [[32minfo[39m]: successfully found clients
+17/11/2024 23:27:21.000 [[32minfo[39m]: successfully found client with the most improvement in latency
+17/11/2024 23:28:09.661 [[32minfo[39m]: successfully found clients
+17/11/2024 23:28:09.771 [[32minfo[39m]: successfully found client with the most improvement in latency
+17/11/2024 23:28:09.909 [[32minfo[39m]: successfully found clients
+17/11/2024 23:28:10.193 [[32minfo[39m]: successfully found clients
+17/11/2024 23:28:10.263 [[32minfo[39m]: successfully found clients
+17/11/2024 23:28:41.110 [[32minfo[39m]: successfully found clients
+17/11/2024 23:28:41.250 [[32minfo[39m]: successfully found client with the most improvement in latency
+17/11/2024 23:28:41.406 [[32minfo[39m]: successfully found clients
+17/11/2024 23:28:41.760 [[32minfo[39m]: successfully found clients
+17/11/2024 23:28:41.914 [[32minfo[39m]: successfully found clients
+17/11/2024 23:29:51.118 [[32minfo[39m]: successfully found clients
+17/11/2024 23:29:51.227 [[32minfo[39m]: successfully found client with the most improvement in latency
+17/11/2024 23:29:51.329 [[32minfo[39m]: successfully found clients
+17/11/2024 23:29:51.602 [[32minfo[39m]: successfully found clients
+17/11/2024 23:29:51.722 [[32minfo[39m]: successfully found clients
+17/11/2024 23:30:03.071 [[32minfo[39m]: successfully found client with the most improvement in latency
+17/11/2024 23:30:46.555 [[32minfo[39m]: successfully found clients
+17/11/2024 23:30:46.809 [[32minfo[39m]: successfully found clients
+17/11/2024 23:30:47.039 [[32minfo[39m]: successfully found clients
+17/11/2024 23:30:47.209 [[32minfo[39m]: successfully found clients
+17/11/2024 23:30:47.362 [[32minfo[39m]: successfully found client with the most improvement in latency
+17/11/2024 23:31:11.750 [[32minfo[39m]: successfully found clients
+17/11/2024 23:31:12.335 [[32minfo[39m]: successfully found clients
+17/11/2024 23:31:12.367 [[32minfo[39m]: successfully found clients
+17/11/2024 23:31:12.440 [[32minfo[39m]: successfully found clients
+17/11/2024 23:31:12.604 [[32minfo[39m]: successfully found client with the most improvement in latency
+17/11/2024 23:32:08.189 [[32minfo[39m]: successfully found client with the most improvement in latency
+17/11/2024 23:32:36.571 [[32minfo[39m]: successfully found clients

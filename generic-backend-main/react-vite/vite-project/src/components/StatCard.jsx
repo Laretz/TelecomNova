@@ -4,7 +4,6 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { SparkLineChart } from '@mui/x-charts/SparkLineChart';
@@ -53,9 +52,10 @@ AreaGradient.propTypes = {
   id: PropTypes.string.isRequired,
 };
 
+// eslint-disable-next-line react/prop-types
 function StatCard({ title, value, interval, trend, data }) {
   const theme = useTheme();
-  const daysInWeek = getDaysInMonth(10, 2024);
+/*   const daysInWeek = getDaysInMonth(10, 2024); */
 
 
   const trendColors = {
@@ -73,13 +73,13 @@ function StatCard({ title, value, interval, trend, data }) {
         : theme.palette.grey[700],
   };
 
-  const labelColors = {
+/*   const labelColors = {
     up: 'success',
     down: 'error',
     neutral: 'default',
   };
 
-  const color = labelColors[trend];
+  const color = labelColors[trend]; */
   const chartColor = trendColors[trend];
   /* const trendValues = { up: '+25%', down: '-25%', neutral: '+5%' }; */
   return (
@@ -110,7 +110,6 @@ function StatCard({ title, value, interval, trend, data }) {
             <SparkLineChart
               colors={[chartColor]}
               data={data}
-              area = '#2E42A5'
               showHighlight
               showTooltip
               xAxis={{
@@ -137,7 +136,6 @@ StatCard.propTypes = {
   interval: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   trend: PropTypes.oneOf(['down', 'neutral', 'up']).isRequired,
-  value: PropTypes.string.isRequired,
 };
 
 export default StatCard;

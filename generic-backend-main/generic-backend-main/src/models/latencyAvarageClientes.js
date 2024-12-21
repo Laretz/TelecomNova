@@ -5,8 +5,7 @@ const prisma = new PrismaClient();
 module.exports = {
   async execute() {
     try {
-      const sevenDaysAgo = new Date();
-      sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+    
 
       // nessa parte do codigo, ele agrupo as metricas pelo costumerID e calcula a media de latencia para cada grupo nos ultimos 7 dias e também deixa em ordem crescente 
       let clientesPorMediaDeLatencia = await prisma.metrics.groupBy({
@@ -15,9 +14,6 @@ module.exports = {
           latency: true,
         },
         where: {
-          date: {
-            gte: sevenDaysAgo,
-          },
           latency: {
             not: null,
           },
@@ -52,7 +48,7 @@ module.exports = {
         })
       );
 
-      return clientes; // Retorna a lista de clientes com a média de latencia
+      return clientes; 
     } catch (error) {
       // Tratamento de erros
       error.path = "src/models/packetLossAvgClientes.js";
