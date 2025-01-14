@@ -28,6 +28,9 @@ A dashboard é alimentada por dados dinâmicos provenientes de APIs backend, per
 
 Clone o repositório para sua máquina local:
 
+![Texto Alternativo](https://1drv.ms/i/c/94cd7427fd1faffa/EbD9EIv9lvRPgW-ghGX7zRwBuzOyKNBVMT8wvUtuYStIqQ?e=n5JpeH)
+
+
 ```bash
 git clone https://github.com/Laretz/TelecomNova.git
 cd TelecomNova
@@ -40,3 +43,5 @@ npm start
 cd ../frontend
 npm install
 npm run dev
+
+
