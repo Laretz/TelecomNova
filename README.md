@@ -1,5 +1,7 @@
 # TelecomNova - Dashboard de Monitoramento de Rede
 
+![Tela do Projeto](https://i.imgur.com/D5te4Y9.jpg)
+
 Este é um projeto de dashboard para monitoramento de tráfego de rede, latência, perda de pacotes e outros parâmetros de rede, utilizando **React**, **Vite**, **Material UI** para o frontend, **Node.js** no backend e **PostgreSQL** com **Prisma** para o banco de dados. O banco de dados está sendo executado em um container Docker.
 
 ## Tecnologias Utilizadas
@@ -27,8 +29,6 @@ A dashboard é alimentada por dados dinâmicos provenientes de APIs backend, per
 ###  Clonando e executando o Repositório
 
 Clone o repositório para sua máquina local:
-
-![Texto Alternativo](https://1drv.ms/i/c/94cd7427fd1faffa/EbD9EIv9lvRPgW-ghGX7zRwBuzOyKNBVMT8wvUtuYStIqQ?e=n5JpeH)
 
 
 ```bash
